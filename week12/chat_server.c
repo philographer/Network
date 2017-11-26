@@ -72,6 +72,7 @@ void * handle_clnt(void * arg) {
         if(clnt_sock==clnt_socks[i]) {
 			while(i<clnt_cnt-1){
 				clnt_socks[i]=clnt_socks[i+1];
+                i++;
             }
 			break;
 		}        
